@@ -12,7 +12,7 @@ void Table::draw_table(){
 }
 
 
-void Table::update_table(int& choise, bool& player1){
+void Table::update_table(int choise, bool player1){
     string cell_char = player1?"\u001b[31mX\u001b[0m":"\u001b[34mO\u001b[0m";
     switch(choise){
         case 1:

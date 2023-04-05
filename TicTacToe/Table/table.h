@@ -13,7 +13,7 @@ string game_table[3][3]{
 class Table{
     public:
         void draw_table();
-        void update_table(int& choise, bool& player1);
+        void update_table(int choise, bool player1);
         void reset_table();
 };
 
