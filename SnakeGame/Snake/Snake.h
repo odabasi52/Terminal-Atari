@@ -1,7 +1,7 @@
 #ifndef SNAKE
 #define SNAKE
 
-#include "../Game/Game.cpp"
+#include "../sGame/sGame.cpp"
 #include "../Keyboard/Keyboard.cpp"
 
 int snake_length;

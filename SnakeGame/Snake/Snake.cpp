@@ -5,7 +5,7 @@
 
 void Snake::MoveSnake(){
     Keyboard* kb = new Keyboard(); 
-    Game* game = new Game();
+    sGame* game = new sGame();
     std::string gameover_choice;
     
     bool hitYourself = false;

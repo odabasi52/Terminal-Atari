@@ -1,4 +1,4 @@
-#include "Game/game.h"
+#include "ticGame/ticgame.h"
 
 void TicTacToe(){
     play();    

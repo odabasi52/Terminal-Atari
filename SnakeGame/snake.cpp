@@ -36,7 +36,7 @@ void snake()
     }
     int speed = (speed_choise==1)?80000:(speed_choise==2)?50000:20000;
 
-    Game* game = new Game(w,h);
+    sGame* game = new sGame(w,h);
    
     game->create_map();
     game->draw_map();

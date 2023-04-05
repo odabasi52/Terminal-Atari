@@ -1,10 +1,10 @@
-#ifndef GAME_CPP
-#define GAME_CPP
+#ifndef sGAME_CPP
+#define sGAME_CPP
 
-#include "Game.h"
+#include "sGame.h"
 #include "../Snake/Snake.cpp"
 
-void Game::draw_map(){
+void sGame::draw_map(){
     /*clear terminal*/
     std::cout << "\x1B[2J\x1B[H";
 
@@ -39,7 +39,7 @@ void Game::draw_map(){
     }
 }
 
-void Game::reset_map(){
+void sGame::reset_map(){
     std::cout << "\x1B[2J\x1B[H";
     
     snake_body = {};
@@ -75,7 +75,7 @@ void Game::reset_map(){
     }
 }
 
-void Game::create_map(){ 
+void sGame::create_map(){ 
     for(int h=0; h < map_height; h++){
         for(int w=0; w < map_width; w++){
             int* cell = new int[2];
@@ -87,13 +87,13 @@ void Game::create_map(){
     }
 }
 
-void Game::generate_apple(){
+void sGame::generate_apple(){
     srand(time(NULL));
     apple_w = (rand() % map_width-3)+1;
     apple_h = (rand() % map_height-3)+1;
 }
 
-Game::Game(int width, int height){
+sGame::sGame(int width, int height){
     map_width = width;
     map_height = height;
 
@@ -108,7 +108,7 @@ Game::Game(int width, int height){
     this->generate_apple();    
 }
 
-void Game::play(){
+void sGame::play(){
     Snake* snake = new Snake();
     snake->MoveSnake();
     delete snake;

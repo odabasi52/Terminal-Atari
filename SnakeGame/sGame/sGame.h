@@ -14,10 +14,10 @@ std::vector<int*> map;
 
 int map_width, map_height;
 
-class Game{
+class sGame{
     public:
-        Game(int width, int height);
-        Game() = default;
+        sGame(int width, int height);
+        sGame() = default;
         
         void draw_map();
         void reset_map();
